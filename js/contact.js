@@ -44,6 +44,12 @@ function toggleMenu() {
 menuToggle.addEventListener('click', toggleMenu);
 menuOverlay.addEventListener('click', toggleMenu);
 
+// Закриття меню кнопкою з хрестиком
+const closeMenuBtn = document.getElementById('closeMenuBtn');
+if (closeMenuBtn) {
+    closeMenuBtn.addEventListener('click', toggleMenu);
+}
+
 // Закриття меню при кліку на посилання
 const menuLinks = document.querySelectorAll('.menu-links a');
 menuLinks.forEach(link => {
@@ -317,6 +323,7 @@ console.log('Версія: 2.1');
 window.addEventListener('error', (e) => {
     console.error('Виникла помилка:', e.error);
 });
+
 
 
 
