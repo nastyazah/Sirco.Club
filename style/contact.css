@@ -72,26 +72,66 @@ body {
 }
 
 /* Лапки зліва*/
-.paw-left-1 { left: 2%; top: 15%; animation-delay: 0.5s; }
-.paw-left-2 { left: 1%; top: 28%; animation-delay: 1s; }
-.paw-left-3 { left: 2%; top: 41%; animation-delay: 1.5s; }
-.paw-left-4 { left: 1%; top: 54%; animation-delay: 2s; }
+.paw-left-1 { 
+    left: 2%; 
+    top: 15%; 
+    animation-delay: 0.5s;
+}
+
+.paw-left-2 { 
+    left: 1%; 
+    top: 28%; 
+    animation-delay: 1s;
+}
+
+.paw-left-3 { 
+    left: 2%; 
+    top: 41%; 
+    animation-delay: 1.5s; 
+}
+
+.paw-left-4 { 
+    left: 1%; 
+    top: 54%; 
+    animation-delay: 2s; 
+}
 
 /* Лапки справа */
-.paw-right-1 { right: 2%; top: 20%; animation-delay: 0.7s; }
-.paw-right-2 { right: 1%; top: 33%; animation-delay: 1.2s; }
-.paw-right-3 { right: 2%; top: 46%; animation-delay: 1.7s; }
-.paw-right-4 { right: 1%; top: 59%; animation-delay: 2.2s; }
+.paw-right-1 { 
+    right: 2%; 
+    top: 20%; 
+    animation-delay: 0.7s; 
+}
+
+.paw-right-2 { 
+    right: 1%; 
+    top: 33%; 
+    animation-delay: 1.2s; 
+}
+
+.paw-right-3 { 
+    right: 2%; 
+    top: 46%; 
+    animation-delay: 1.7s; 
+}
+
+.paw-right-4 { 
+    right: 1%; 
+    top: 59%; 
+    animation-delay: 2.2s; 
+}
 
 @keyframes pawFadeIn {
     0% {
         opacity: 0;
         transform: scale(0.5) rotate(-20deg);
     }
+    
     50% {
         opacity: 0.5;
         transform: scale(1.1) rotate(5deg);
     }
+    
     100% {
         opacity: 0.45;
         transform: scale(1) rotate(0deg);
@@ -303,6 +343,32 @@ header {
 .menu-links a:hover {
     color: var(--accent);
     padding-left: 5px;
+}
+
+.close-menu-btn {
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    width: 44px;
+    height: 44px;
+    background: var(--accent);
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    box-shadow: 0 4px 12px rgba(166, 138, 111, 0.3);
+    z-index: 100;
+    padding: 0;
+}
+
+.close-menu-btn:hover,
+.close-menu-btn:focus {
+    background: var(--accent-hover);
+    transform: rotate(90deg) scale(1.1);
+    box-shadow: 0 6px 18px rgba(166, 138, 111, 0.4);
 }
 
 /* Hero секція */
@@ -1697,4 +1763,5 @@ textarea:focus-visible {
     .contacts-content::after {
         animation: float 20s ease-in-out infinite;
     }
+
 }
