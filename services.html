@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Професійні кінологічні послуги у Луцьку. Базовий послух, соціалізація, групові заняття, адаптація та індивідуальні тренування для собак всіх порід та віку.">
+  <meta name="keywords" content="кінолог Луцьк, дресирування собак, тренування собак, курси послуху, соціалізація собак, групові заняття">
+  <meta property="og:title" content="SIRKO CLUB - Професійні кінологічні послуги у Луцьку">
+  <meta property="og:description" content="Індивідуальний підхід до кожного собаки. Від базового послуху до спеціалізованих програм тренувань.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="img/light.png">
+  <title>SIRKO CLUB - Послуги</title>
+  <link rel="stylesheet" href="css/services.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="logo">
+        <img src="img/light.png" alt="SIRKO CLUB - Логотип кінологічного центру" class="logo-img" id="logoImg"
+             onerror="this.style.display='none'; document.getElementById('logoFallback').style.display='flex';">
+        <div id="logoFallback" class="logo-fallback" style="display: none;" aria-label="SIRKO CLUB">SC</div>
+      </div>
+      <nav class="header-controls">
+        <button class="theme-toggle" id="themeToggle" aria-label="Змінити тему оформлення">
+          <svg class="theme-icon" width="40" height="40" viewBox="0 0 200 200" fill="none" aria-hidden="true">
+            <circle cx="70" cy="100" r="38" fill="url(#sunGradient)"/>
+            <defs>
+              <linearGradient id="sunGradient">
+                <stop offset="0%" stop-color="#FFD700"/>
+                <stop offset="100%" stop-color="#FF8C00"/>
+              </linearGradient>
+            </defs>
+            <rect x="67" y="25" width="6" height="20" rx="3" fill="#FF8C00"/>
+            <rect x="105" y="45" width="6" height="20" rx="3" fill="#FF8C00" transform="rotate(45 108 55)"/>
+            <rect x="130" y="97" width="20" height="6" rx="3" fill="#FF8C00"/>
+            <rect x="105" y="135" width="6" height="20" rx="3" fill="#FF8C00" transform="rotate(-45 108 145)"/>
+            <rect x="67" y="155" width="6" height="20" rx="3" fill="#FF8C00"/>
+            <rect x="29" y="135" width="6" height="20" rx="3" fill="#FF8C00" transform="rotate(45 32 145)"/>
+            <rect x="20" y="97" width="20" height="6" rx="3" fill="#FF8C00"/>
+            <rect x="29" y="45" width="6" height="20" rx="3" fill="#FF8C00" transform="rotate(-45 32 55)"/>
+            <circle cx="130" cy="100" r="55" fill="#3d2f22"/>
+            <circle cx="138" cy="100" r="53" fill="#E5E5E5"/>
+            <circle cx="125" cy="85" r="8" fill="#C8C8C8" opacity="0.7"/>
+            <circle cx="145" cy="78" r="5" fill="#C8C8C8" opacity="0.7"/>
+            <circle cx="155" cy="100" r="6" fill="#C8C8C8" opacity="0.7"/>
+            <circle cx="148" cy="118" r="9" fill="#C8C8C8" opacity="0.7"/>
+            <circle cx="128" cy="115" r="5" fill="#C8C8C8" opacity="0.7"/>
+            <circle cx="160" cy="90" r="4" fill="#C8C8C8" opacity="0.6"/>
+          </svg>
+        </button>
+        <button class="menu-icon" id="menuToggle" aria-label="Відкрити меню навігації" aria-expanded="false">
+          <svg class="paw-icon" viewBox="0 0 100 100" aria-hidden="true">
+            <ellipse cx="50" cy="70" rx="20" ry="15" fill="#9b8266"/>
+            <ellipse cx="28" cy="45" rx="10" ry="13" fill="#9b8266" transform="rotate(-15 28 45)"/>
+            <ellipse cx="40" cy="35" rx="10" ry="13" fill="#9b8266" transform="rotate(-5 40 35)"/>
+            <ellipse cx="60" cy="35" rx="10" ry="13" fill="#9b8266" transform="rotate(5 60 35)"/>
+            <ellipse cx="72" cy="45" rx="10" ry="13" fill="#9b8266" transform="rotate(15 72 45)"/>
+          </svg>
+        </button>
+      </nav>
+    </header>
+    <div class="menu-overlay" id="menuOverlay" aria-hidden="true"></div>
+    <nav class="mobile-menu" id="mobileMenu" aria-label="Головна навігація">
+      <button class="close-menu-btn" id="closeMenuBtn" aria-label="Закрити меню">
+        <img src="img/hr.png" alt="" style="width: 28px; height: 28px; object-fit: contain;">
+      </button>
+      <ul class="menu-links">
+        <li><a href="index.html">Головна</a></li>
+        <li><a href="services.html" aria-current="page">Послуги</a></li>
+        <li><a href="contact.html">Контакти</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <section class="hero" id="home">
+        <div class="hero-content">
+          <h1>Наші послуги</h1>
+          <p>Професійні кінологічні послуги для вашого улюбленця. Від базового послуху до спеціалізованих програм тренувань.</p>
+        </div>
+      </section>
+
+      <section class="services-section" id="services">
+        <div class="section-inner">
+          <h2 class="section-title">Наші послуги</h2>
+          <p class="section-subtitle">Ми пропонуємо індивідуальний підхід до кожного собаки, враховуючи його вік, породу та особливості характеру.</p>
+          <div class="services-grid">
+            
+            <article class="service-card">
+              <img src="img/1.jpeg" alt="Тренування собаки базовим командам на майданчику" class="service-image" loading="lazy">
+              <div class="service-content">
+                <h3 class="service-title">Курси базового послуху</h3>
+                <p class="service-description">Індивідуальні заняття з основними командами та поведінковою корекцією для щенят та дорослих собак.</p>
+                <ul class="service-features">
+                  <li>Основні команди (сидіти, лежати, до мене)</li>
+                  <li>Хода поруч без повідка</li>
+                  <li>Витримка та самоконтроль</li>
+                  <li>Заборонні команди</li>
+                </ul>
+                <div class="service-footer">
+                  <div>
+                    <div class="service-price">Від 1500₴</div>
+                    <div class="service-duration">за заняття</div>
+                  </div>
+                  <button class="btn-book" onclick="window.location.href='https://docs.google.com/forms/d/e/1FAIpQLSfRU9V35muURrDXWjqPRwVCENJERjDULEuLizLu45C7HAdxSQ/viewform'"><span>Записатись</span></button>
+                </div>
+              </div>
+            </article>
+
+            <article class="service-card">
+              <img src="img/2.jpeg" alt="Індивідуальне тренування собаки з кінологом" class="service-image" loading="lazy">
+              <div class="service-content">
+                <h3 class="service-title">Персональні заняття</h3>
+                <p class="service-description">Робота під ваш графік з індивідуальною програмою тренувань для вашого улюбленця.</p>
+                <ul class="service-features">
+                  <li>Гнучкий графік занять</li>
+                  <li>Персональна програма</li>
+                  <li>Робота з конкретними проблемами</li>
+                  <li>Консультація для власника</li>
+                </ul>
+                <div class="service-footer">
+                  <div>
+                    <div class="service-price">500₴</div>
+                    <div class="service-duration">за годину</div>
+                  </div>
+                  <button class="btn-book" onclick="window.location.href='https://docs.google.com/forms/d/e/1FAIpQLSfRU9V35muURrDXWjqPRwVCENJERjDULEuLizLu45C7HAdxSQ/viewform'"><span>Записатись</span></button>
+                </div>
+              </div>
+            </article>
+
+            <article class="service-card">
+              <img src="img/3.jpeg" alt="Соціалізація собаки з іншими тваринами" class="service-image" loading="lazy">
+              <div class="service-content">
+                <h3 class="service-title">Соціалізація</h3>
+                <p class="service-description">Знайомство з людьми та іншими собаками в контрольованому середовищі для впевненої поведінки.</p>
+                <ul class="service-features">
+                  <li>Знайомство з іншими собаками</li>
+                  <li>Ігрові сесії в групі</li>
+                  <li>Зниження страху та агресії</li>
+                  <li>Формування впевненості</li>
+                </ul>
+                <div class="service-footer">
+                  <div>
+                    <div class="service-price">600₴</div>
+                    <div class="service-duration">за 1.5 години</div>
+                  </div>
+                  <button class="btn-book" onclick="window.location.href='https://docs.google.com/forms/d/e/1FAIpQLSfRU9V35muURrDXWjqPRwVCENJERjDULEuLizLu45C7HAdxSQ/viewform'"><span>Записатись</span></button>
+                </div>
+              </div>
+            </article>
+            
+            <article class="service-card">
+              <img src="img/4.jpg" alt="Групове тренування собак на майданчику" class="service-image" loading="lazy">
+              <div class="service-content">
+                <h3 class="service-title">Групове заняття</h3>
+                <p class="service-description">Корекція поведінки та навчання в групі для кращої соціалізації та командної роботи.</p>
+                <ul class="service-features">
+                  <li>Групи до 6 собак</li>
+                  <li>Корекція небажаної поведінки</li>
+                  <li>Вправи на увагу</li>
+                  <li>Взаємодія з іншими собаками</li>
+                </ul>
+                <div class="service-footer">
+                  <div>
+                    <div class="service-price">400₴</div>
+                    <div class="service-duration">за 2 години</div>
+                  </div>
+                  <button class="btn-book" onclick="window.location.href='https://docs.google.com/forms/d/e/1FAIpQLSfRU9V35muURrDXWjqPRwVCENJERjDULEuLizLu45C7HAdxSQ/viewform'"><span>Записатись</span></button>
+                </div>
+              </div>
+            </article>
+
+            <article class="service-card">
+              <img src="img/5.jpg" alt="Кінолог супроводжує собаку до грумера" class="service-image" loading="lazy">
+              <div class="service-content">
+                <h3 class="service-title">Супровід до грумера</h3>
+                <p class="service-description">Зниження стресу під час відвідування грумера з професійним супроводом кінолога.</p>
+                <ul class="service-features">
+                  <li>Підтримка у стресових ситуаціях</li>
+                  <li>Зниження страху перед процедурами</li>
+                  <li>Контроль поведінки</li>
+                  <li>Комфорт для собаки</li>
+                </ul>
+                <div class="service-footer">
+                  <div>
+                    <div class="service-price">Від 1400₴</div>
+                    <div class="service-duration">за процедуру</div>
+                  </div>
+                  <button class="btn-book" onclick="window.location.href='https://docs.google.com/forms/d/e/1FAIpQLSfRU9V35muURrDXWjqPRwVCENJERjDULEuLizLu45C7HAdxSQ/viewform'"><span>Записатись</span></button>
+                </div>
+              </div>
+            </article>
+
+            <article class="service-card">
+              <img src="img/6.jpg" alt="Супровід собаки до ветеринарної клініки" class="service-image" loading="lazy">
+              <div class="service-content">
+                <h3 class="service-title">Ветеринарний супровід</h3>
+                <p class="service-description">Професійний догляд та підтримка під час візитів до ветеринарної клініки.</p>
+                <ul class="service-features">
+                  <li>Підтримка у стресових ситуаціях</li>
+                  <li>Зниження страху перед процедурами</li>
+                  <li>Спокійна та впевнена поведінка</li>
+                  <li>Комфорт для собаки</li>
+                </ul>
+                <div class="service-footer">
+                  <div>
+                    <div class="service-price">Від 900₴</div>
+                    <div class="service-duration">за візит</div>
+                  </div>
+                  <button class="btn-book" onclick="window.location.href='https://docs.google.com/forms/d/e/1FAIpQLSfRU9V35muURrDXWjqPRwVCENJERjDULEuLizLu45C7HAdxSQ/viewform'"><span>Записатись</span></button>
+                </div>
+              </div>
+            </article>
+
+            <article class="service-card">
+              <img src="img/7.jpeg" alt="Адаптація собаки до нового середовища" class="service-image" loading="lazy">
+              <div class="service-content">
+                <h3 class="service-title">Адаптація</h3>
+                <p class="service-description">Адаптація до середовища, звуків, запахів та нових ситуацій для впевненої собаки.</p>
+                <ul class="service-features">
+                  <li>Привчання до звуків, запахів</li>
+                  <li>Робота з тривожністю</li>
+                  <li>Закріплення слухняності в умовах міжальйонів</li>
+                  <li>Формування впевненості</li>
+                </ul>
+                <div class="service-footer">
+                  <div>
+                    <div class="service-price">Від 900₴</div>
+                    <div class="service-duration">за заняття</div>
+                  </div>
+                  <button class="btn-book" onclick="window.location.href='https://docs.google.com/forms/d/e/1FAIpQLSfRU9V35muURrDXWjqPRwVCENJERjDULEuLizLu45C7HAdxSQ/viewform'"><span>Записатись</span></button>
+                </div>
+              </div>
+            </article>
+
+            <article class="service-card">
+              <img src="img/8.jpg" alt="Курс мінімального послуху для собак" class="service-image" loading="lazy">
+              <div class="service-content">
+                <h3 class="service-title">Курс мінімального послуху</h3>
+                <p class="service-description">Навчаємо базовим командам для комфортного життя разом.</p>
+                <ul class="service-features">
+                  <li>Персональні тренування</li>
+                  <li>Адаптація</li>
+                  <li>Групові тренування</li>
+                  <li>Соціалізація</li>
+                </ul>
+                <div class="service-footer">
+                  <div>
+                    <div class="service-price">500₴</div>
+                    <div class="service-duration">за годину</div>
+                  </div>
+                  <button class="btn-book" onclick="window.location.href='https://docs.google.com/forms/d/e/1FAIpQLSfRU9V35muURrDXWjqPRwVCENJERjDULEuLizLu45C7HAdxSQ/viewform'"><span>Записатись</span></button>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+
+       <div class="info-wrapper">
+      <section class="how-it-works-section" id="recomend">
+        <div class="section-inner">
+          <h2 class="section-title">Як це працює?</h2>
+          <div class="info-grid">
+            <div class="info-card">
+              <div class="info-icon" aria-hidden="true">
+                <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="black" stroke-width="1.8">
+                  <rect x="5" y="3" width="14" height="18" rx="2"/>
+                  <path d="M9 7h6M9 11h6M9 15h4"/>
+                </svg>
+              </div>
+              <h3>1. Заповнення анкети</h3>
+              <p>Ви обираєте зручний день і час для заняття та заповнюєте анкету клієнта з інформацією про собаку.</p>
+            </div>
+            <div class="info-card">
+              <div class="info-icon" aria-hidden="true">
+                <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="black" stroke-width="1.8">
+                  <circle cx="12" cy="12" r="9"/>
+                  <path d="M8 12l3 3 5-6"/>
+                </svg>
+              </div>
+              <h3>2. Підтвердження запису</h3>
+              <p>Ми надсилаємо вам анкету клієнта для заповнення. Після її отримання запис буде підтверджено.</p>
+            </div>
+            <div class="info-card">
+              <div class="info-icon" aria-hidden="true">
+                <img src="img/tr.png" alt="" style="width: 28px; height: 28px; object-fit: contain;">
+              </div>
+              <h3>3. Заняття</h3>
+              <p>Для занять беріть не лише улюблені ласощі, а й звичайну їжу, до якої звик ваш песик.</p>
+            </div>
+            <div class="info-card">
+              <div class="info-icon" aria-hidden="true">
+                <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="black" stroke-width="1.8">
+                  <path d="M3 12a9 9 0 0 1 15-6M18 3v6h-6M21 12a9 9 0 0 1-15 6M6 21v-6h6"/>
+                </svg>
+              </div>
+              <h3>4. Регулярність</h3>
+              <p>Головне — візьміть із собою гарний настрій та готовність до тренувань максимально комфортними.</p>
+            </div>
+          </div>
+        </div>
+      </section> 
+         
+      <section class="before-visit-section">
+        <div class="section-inner">
+          <h2 class="section-title">🐾 Перед візитом</h2>
+          <div class="info-grid">
+            <div class="info-card">
+              <div class="info-icon" aria-hidden="true">
+                <img src="img/mu.png" alt="" style="width: 28px; height: 28px; object-fit: contain;">
+              </div>
+              <h3>Собака має бути голодною</h3>
+              <p>Цуценя: 3-4 години перед заняттям не їсти. Доросла собака: пропустити одну порцію їжі.</p>
+            </div>
+            <div class="info-card">
+              <div class="info-icon" aria-hidden="true">
+                <img src="img/re.png" alt="" style="width: 28px; height: 28px; object-fit: contain;">
+              </div>
+              <h3>Що взяти з собою</h3>
+              <p>Корм або м'ясо, улюблені ласощі, іграшку, поводок та шлейку, пакети та серветки.</p>
+            </div>
+            <div class="info-card">
+              <div class="info-icon" aria-hidden="true">
+                <img src="img/sob.png" alt="" style="width: 28px; height: 28px; object-fit: contain;">
+              </div>
+              <h3>Добре вигуляйте собаку</h3>
+              <p>Собака має бути добре вигуляною перед заняттям для кращої концентрації та уваги.</p>
+            </div>
+            <div class="info-card">
+              <div class="info-icon" aria-hidden="true">
+                <img src="img/sm.png" alt="" style="width: 28px; height: 28px; object-fit: contain;">
+              </div>
+              <h3>Гарний настрій</h3>
+              <p>Візьміть із собою гарний настрій та готовність до тренувань — це найважливіше!</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      </div>
+
+    
+      <section class="faq-section" id="question">
+        <div class="section-inner">
+          <h2 class="section-title">Часті запитання</h2>
+          <p class="section-subtitle">Відповіді на найпоширеніші питання про наші послуги</p>
+          <div class="faq-container">
+            <div class="faq-item">
+              <div class="faq-question" role="button" tabindex="0" aria-expanded="false">Як часто потрібно займатися з собакою?</div>
+              <div class="faq-answer">Для найкращих результатів рекомендуємо займатися 2-3 рази на тиждень. Це дозволить собаці закріпити навички та поступово прогресувати в навчанні.</div>
+            </div>
+            <div class="faq-item">
+              <div class="faq-question" role="button" tabindex="0" aria-expanded="false">Який вік найкращий для початку тренувань?</div>
+              <div class="faq-answer">Тренування можна починати з 3-місячного віку. Щенята швидко засвоюють нову інформацію, але і дорослих собак можна навчити будь-яким командам.</div>
+            </div>
+            <div class="faq-item">
+              <div class="faq-question" role="button" tabindex="0" aria-expanded="false">Чи потрібно брати участь власнику в тренуваннях?</div>
+              <div class="faq-answer">Так, обов'язково. Ми навчаємо не лише собаку, а й власника, щоб ви могли продовжувати тренування вдома та підтримувати результати.</div>
+            </div>
+            <div class="faq-item">
+              <div class="faq-question" role="button" tabindex="0" aria-expanded="false">Як довго триває одне заняття?</div>
+              <div class="faq-answer">Тривалість залежить від типу послуги: індивідуальні заняття — 1 година, групові — 1.5-2 години, соціалізація — 1.5 години.</div>
+            </div>
+            <div class="faq-item">
+              <div class="faq-question" role="button" tabindex="0" aria-expanded="false">Що якщо моя собака не слухається?</div>
+              <div class="faq-answer">Не хвилюйтесь! Ми працюємо з собаками будь-якого рівня підготовки. Наші кінологи знайдуть індивідуальний підхід до вашого улюбленця.</div>
+            </div>
+            <div class="faq-item">
+              <div class="faq-question" role="button" tabindex="0" aria-expanded="false">Чи є у вас знижки для постійних клієнтів?</div>
+              <div class="faq-answer">Так, ми пропонуємо знижки при купівлі пакету занять, а також маємо програму лояльності для наших постійних клієнтів.</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      <section class="cta-section" id="contact">
+        <h2>Готові почати тренування?</h2>
+        <p>Забронюйте вашу першу сесію сьогодні і відчуйте різницю професійного тренування!</p>
+        <div class="cta-buttons">
+          <button class="btn-large" onclick="window.location.href='https://docs.google.com/forms/d/e/1FAIpQLSfRU9V35muURrDXWjqPRwVCENJERjDULEuLizLu45C7HAdxSQ/viewform'"><span>Записатись зараз</span></button>
+          <button class="btn-large btn-outline" onclick="window.location.href='https://t.me/Pracontanaaa'"><span>Зв'язатись з нами</span></button>
+        </div>
+      </section>
+    </main>
+
+
+    <footer>
+      <div class="footer-content">
+        <div class="footer-section">
+          <h4>SIRKO CLUB</h4>
+          <p style="color: var(--text-secondary); font-size: 14px; line-height: 1.6;">Професійний кінологічний центр, що надає комплексні послуги з тренування та догляду за вашими улюбленцями.</p>
+        </div>
+        <nav class="footer-section" aria-label="Додаткова навігація">
+          <h4>Швидкі посилання</h4>
+          <ul class="footer-links">
+            <li><a href="#home">Наші послуги</a></li>
+            <li><a href="#recomend">Рекомендації</a></li>
+            <li><a href="#question">Часті запитання</a></li>
+          </ul>
+        </nav>
+        <address class="footer-section">
+          <h4>Контакти</h4>
+          <ul class="footer-links">
+            <li><a href="tel:+380 66 854 80 08">+380 66 854 80 08</a></li>
+            <li><a href="mailto:info@sirko.club">info@sirko.club</a></li>
+            <li>Луцьк, Волинь, Україна</li>
+          </ul>
+        </address>
+      </div>
+      <div class="footer-bottom">
+        © 2025 SIRKO CLUB. Всі права захищені.
+      </div>
+    </footer>
+  </div>
+
+  <button class="scroll-top" id="scrollTop">↑</button>
+<script src="js/services.js"></script>
+  
+</body>
+</html>
