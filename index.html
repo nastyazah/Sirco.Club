@@ -8,8 +8,6 @@
     <meta property="og:title" content="SIRKO CLUB - Професійний кінологічний центр">
     <meta property="og:image" content="https://yoursite.com/img/og-image.jpg">
     <meta name="twitter:card" content="summary_large_image">
-    <link rel="icon" type="image/png" href="img/favicon.png">
-    <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
     <title>SIRKO CLUB - Professional Canine Center</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/animations.css">
@@ -17,40 +15,36 @@
     <script src="js/script.js" defer></script>
 </head>
 <body>
-    <!-- Екран завантаження -->
-    <div class="loading" id="loading">
-        <div class="spinner" role="status" aria-label="Завантаження"></div>
-    </div>
 
-    <!-- Прогрес-бар прокрутки -->
-    <div class="progress-bar" id="progressBar" role="progressbar" aria-label="Прогрес прокрутки"></div>
+<!-- Екран завантаження -->
+<div class="loading" id="loading">
+    <div class="spinner" role="status" aria-label="Завантаження"></div>
+</div>
 
-    <div class="container">
-        <header role="banner">
+<!-- Прогрес-бар прокрутки -->
+<div class="progress-bar" id="progressBar" role="progressbar" aria-label="Прогрес прокрутки"></div>
+
+<div class="container">
+
+    <header role="banner">
+        <div class="header-inner">
             <div class="logo">
-                <img src="img/logo/light.png" 
-                    alt="SIRKO CLUB Logo" 
-                    class="logo-img" 
-                    id="logoImg">
-                    
-                <div id="logoFallback" class="logo-fallback" style="display: none;">
-                    SC
-                </div>
+                <img src="img/logo/light.png"
+                     alt="SIRKO CLUB Logo"
+                     class="logo-img"
+                     id="logoImg">
+                <div id="logoFallback" class="logo-fallback" style="display: none;">SC</div>
             </div>
             <nav class="header-controls">
                 <button class="theme-toggle" id="themeToggle" aria-label="Змінити тему">
                     <svg class="theme-icon" width="40" height="40" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <defs>
                             <linearGradient id="sunGradient" x1="0%" y1="0%" x2="0%" y2="100%">
-                                <stop offset="0%" style="stop-color:#FFD700;stop-opacity:1" />
-                                <stop offset="100%" style="stop-color:#FF8C00;stop-opacity:1" />
+                                <stop offset="0%" style="stop-color:#FFD700;stop-opacity:1"/>
+                                <stop offset="100%" style="stop-color:#FF8C00;stop-opacity:1"/>
                             </linearGradient>
                         </defs>
-                        
-                        <!-- Sun Circle -->
                         <circle cx="70" cy="100" r="38" fill="url(#sunGradient)"/>
-                        
-                        <!-- Sun Rays -->
                         <rect x="67" y="25" width="6" height="20" rx="3" fill="#FF8C00"/>
                         <rect x="105" y="45" width="6" height="20" rx="3" fill="#FF8C00" transform="rotate(45 108 55)"/>
                         <rect x="130" y="97" width="20" height="6" rx="3" fill="#FF8C00"/>
@@ -59,12 +53,8 @@
                         <rect x="29" y="135" width="6" height="20" rx="3" fill="#FF8C00" transform="rotate(45 32 145)"/>
                         <rect x="20" y="97" width="20" height="6" rx="3" fill="#FF8C00"/>
                         <rect x="29" y="45" width="6" height="20" rx="3" fill="#FF8C00" transform="rotate(-45 32 55)"/>
-                        
-                        <!-- Moon Circle -->
                         <circle cx="130" cy="100" r="55" fill="#3d2f22"/>
                         <circle cx="138" cy="100" r="53" fill="#E5E5E5"/>
-                        
-                        <!-- Moon Craters -->
                         <circle cx="125" cy="85" r="8" fill="#C8C8C8" opacity="0.7"/>
                         <circle cx="145" cy="78" r="5" fill="#C8C8C8" opacity="0.7"/>
                         <circle cx="155" cy="100" r="6" fill="#C8C8C8" opacity="0.7"/>
@@ -75,415 +65,415 @@
                 </button>
                 <button class="menu-icon" id="menuToggle" aria-label="Відкрити меню" aria-expanded="false">
                     <svg class="paw-icon" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-                        <!-- Main Pad (bottom) -->
                         <ellipse cx="50" cy="70" rx="20" ry="15" fill="#9b8266"/>
-                        
-                        <!-- Toe 1 (left) -->
                         <ellipse cx="28" cy="45" rx="10" ry="13" fill="#9b8266" transform="rotate(-15 28 45)"/>
-                        
-                        <!-- Toe 2 (center-left) -->
                         <ellipse cx="40" cy="35" rx="10" ry="13" fill="#9b8266" transform="rotate(-5 40 35)"/>
-                        
-                        <!-- Toe 3 (center-right) -->
                         <ellipse cx="60" cy="35" rx="10" ry="13" fill="#9b8266" transform="rotate(5 60 35)"/>
-                        
-                        <!-- Toe 4 (right) -->
                         <ellipse cx="72" cy="45" rx="10" ry="13" fill="#9b8266" transform="rotate(15 72 45)"/>
                     </svg>
                 </button>
             </nav>
-        </header>
+        </div><!-- /.header-inner -->
+    </header>
 
-        <div class="menu-overlay" id="menuOverlay" aria-hidden="true"></div>
-        <nav class="mobile-menu" id="mobileMenu" aria-label="Головна навігація">
-            <button class="close-menu-btn" id="closeMenuBtn" aria-label="Закрити меню">
-                <img src="img/hr.png" alt="хрестик з кісток" style="width: 28px; height: 28px; object-fit: contain;">
-            </button>
-            <ul class="menu-links" role="list">
-                <li><a href="index.html">Головна</a></li>
-                <li><a href="services.html">Послуги</a></li>
-                <li><a href="contact.html">Контакти</a></li>
-            </ul>
-        </nav>
+    <!-- FIX: single menuOverlay — removed duplicate that was inside gallery section -->
+    <div class="menu-overlay" id="menuOverlay" aria-hidden="true"></div>
 
-        <main>
-            <section class="hero" id="home" aria-labelledby="hero-title">
-                <video class="hero-video" autoplay muted loop playsinline>
-                    <source src="img/video/bg.hero.mp4" type="video/mp4">
-                    <source src="img/video/bg.hero.webm" type="video/webm">
-                    <source src="img/video/bg.hero.ogv" type="video/ogg">
-                    Your browser does not support the video tag.
-                </video>
+    <nav class="mobile-menu" id="mobileMenu" aria-label="Головна навігація">
+        <button class="close-menu-btn" id="closeMenuBtn" aria-label="Закрити меню">
+            <img src="img/hr.png" alt="хрестик з кісток" style="width: 28px; height: 28px; object-fit: contain;">
+        </button>
+        <ul class="menu-links" role="list">
+            <li><a href="index.html">Головна</a></li>
+            <li><a href="services.html">Послуги</a></li>
+            <li><a href="contact.html">Контакти</a></li>
+        </ul>
+    </nav>
 
-                <div class="hero-content">
-                    <h1 id="hero-title">SIRKO CLUB – Професійний кінологічний центр</h1>
-                    <p>Тренування · Соціалізація · Догляд</p>
-                    <button class="btn-primary" onclick="document.getElementById('services').scrollIntoView({behavior: 'smooth'})">
-                        Наші послуги
-                    </button>
-                </div>
-            </section>
+    <main>
 
-            <section class="section" id="services" aria-labelledby="services-title">
-                <div class="section-bg" style="background-image: url('img/bg-section.jpg');"></div>
-                <h2 class="section-title" id="services-title">Наші послуги</h2>
-                <div class="services-grid">
-                    <article class="service-card">
-                        <div class="service-icon">
-                            <img src="img/services1.jpg" alt="Basic Obedience" loading="lazy">
-                        </div>
-                        <div class="service-content">
-                            <h3 class="service-title">Курси базового послуху</h3>
-                            <p class="service-desc">Індивідуальні заняття</p>
-                            <span class="price-badge">Від 1500₴</span>
-                        </div>
-                    </article>
-                    
-                    <article class="service-card">
-                        <div class="service-icon">
-                            <img src="img/services7.jpg" alt="Group Classes" loading="lazy">
-                        </div>
-                        <div class="service-content">
-                            <h3 class="service-title">Персональні заняття</h3>
-                            <p class="service-desc">Робота під ваш графік</p>
-                            <span class="price-badge">500₴/год</span>
-                        </div>
-                    </article>
-                    
-                    <article class="service-card">
-                        <div class="service-icon">
-                            <img src="img/services4.jpg" alt="Puppy Socialization" loading="lazy">
-                        </div>
-                        <div class="service-content">
-                            <h3 class="service-title">Соціалізація</h3>
-                            <p class="service-desc">Знайомство з людьми та собаками</p>
-                            <span class="price-badge">600₴/1.5 год</span>
-                        </div>
-                    </article>
-                    
-                    <article class="service-card">
-                        <div class="service-icon">
-                            <img src="img/services2.jpg" alt="Rehabilitation" loading="lazy">
-                        </div>
-                        <div class="service-content">
-                            <h3 class="service-title">Групове заняття</h3>
-                            <p class="service-desc">Корекція поведінки</p>
-                            <span class="price-badge">400₴/2 год</span>
-                        </div>
-                    </article>
-                    
-                    <article class="service-card">
-                        <div class="service-icon">
-                            <img src="img/services6.jpg" alt="Sport Training" loading="lazy">
-                        </div>
-                        <div class="service-content">
-                            <h3 class="service-title">Супровід до грумера</h3>
-                            <p class="service-desc">Зниження стресу</p>
-                            <span class="price-badge">Від 1400₴</span>
-                        </div>
-                    </article>
-                    
-                    <article class="service-card">
-                        <div class="service-icon">
-                            <img src="img/services5.jpg" alt="Vet Escort" loading="lazy">
-                        </div>
-                        <div class="service-content">
-                            <h3 class="service-title">Ветеринарний супровід</h3>
-                            <p class="service-desc">Професійний догляд</p>
-                            <span class="price-badge">Від 900₴</span>
-                        </div>
-                    </article>
-
-                    <article class="service-card">
-                        <div class="service-icon">
-                            <img src="img/services3.jpg" alt="Adaptation" loading="lazy">
-                        </div>
-                        <div class="service-content">
-                            <h3 class="service-title">Адаптація</h3>
-                            <p class="service-desc">Професійний догляд</p>
-                            <span class="price-badge">Від 900₴</span>
-                        </div>
-                    </article>
-                </div>
-            </section>
-
-            <section class="section" style="background: var(--bg-card);" id="testimonials" aria-labelledby="testimonials-title">
-                <div class="social-header">
-                    <h2 class="section-title" id="testimonials-title">Історії успіху</h2>
-                    <div class="social-links" role="list">
-                        <a href="https://www.instagram.com/lutsk.kinolog?igsh=MXkxdHd0a3gzbTkwdg==" 
-                        target="_blank" 
-                        rel="noopener noreferrer" 
-                        class="social-icon" 
-                        aria-label="Instagram">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
-                            </svg>
-                        </a>
-                        <a href="https://t.me/Pracontanaa" 
-                        target="_blank" 
-                        rel="noopener noreferrer" 
-                        class="social-icon" 
-                        aria-label="Telegram">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/>
-                            </svg>
-                        </a>
-                    </div>
-                </div>
-
-                <div class="testimonials-container">
-                    <div class="testimonials-track" id="testimonialsTrack">
-                        <!-- Оригінальні відгуки -->
-                        <article class="testimonial-card">
-                            <header class="testimonial-header">
-                                <div class="testimonial-avatar">
-                                    <img src="img/user6.jpg" alt="Фото Олександра Петренка">
-                                </div>
-                                <div class="testimonial-info">
-                                    <h4>Олександр Петренко</h4>
-                                    <div class="stars">★★★★☆</div>
-                                </div>
-                            </header>
-                            <p class="testimonial-text">"Неймовірний досвід! Наше цуценя так багато навчилось всього за кілька тижнів. Тренери професійні і дійсно піклуються про собак."</p>
-                        </article>
-
-                        <article class="testimonial-card">
-                            <header class="testimonial-header">
-                                <div class="testimonial-avatar">
-                                    <img src="img/user5.jpg" alt="Оксана Жешко">
-                                </div>
-                                <div class="testimonial-info">
-                                    <h4>Оксана Жешко</h4>
-                                    <div class="stars">★★★★★</div>
-                                </div>
-                            </header>
-                            <p class="testimonial-text">"Найкраще рішення, яке ми прийняли! Наш песик тепер слухняний і соціалізований. Рекомендую SIRKO CLUB всім власникам собак!"</p>
-                        </article>
-
-                        <article class="testimonial-card">
-                            <header class="testimonial-header">
-                                <div class="testimonial-avatar">
-                                    <img src="img/user3.jpg" alt="Ткачук Дмитро">
-                                </div>
-                                <div class="testimonial-info">
-                                    <h4>Ткачук Дмитро</h4>
-                                    <div class="stars">★★★★★</div>
-                                </div>
-                            </header>
-                            <p class="testimonial-text">"Дуже вдячні фахівцям центру за професійний підхід! Після курсу корекції поведінки прогулянки стали задоволенням, а не стресом."</p>
-                        </article>
-
-                        <article class="testimonial-card">
-                            <header class="testimonial-header">
-                                <div class="testimonial-avatar">
-                                    <img src="img/user2.jpg" alt="Захарчук Софія">
-                                </div>
-                                <div class="testimonial-info">
-                                    <h4>Захарчук Софія</h4>
-                                    <div class="stars">★★★★☆</div>
-                                </div>
-                            </header>
-                            <p class="testimonial-text">"У цьому центрі навчили не тільки пса, але й нас, господарів, правильно з ним взаємодіяти."</p>
-                        </article>
-
-                        <article class="testimonial-card">
-                            <header class="testimonial-header">
-                                <div class="testimonial-avatar">
-                                    <img src="img/user1.jpg" alt="Давула Анна">
-                                </div>
-                                <div class="testimonial-info">
-                                    <h4>Гавула Анна</h4>
-                                    <div class="stars">★★★★☆</div>
-                                </div>
-                            </header>
-                            <p class="testimonial-text">"Кінологи завжди на зв'язку, детально пояснюють кожен момент. Рекомендую всім хто любить свого песика!"</p>
-                        </article>
-
-                        <article class="testimonial-card">
-                            <header class="testimonial-header">
-                                <div class="testimonial-avatar">
-                                    <img src="img/user4.jpg" alt="Ольга">
-                                </div>
-                                <div class="testimonial-info">
-                                    <h4>Ольга</h4>
-                                    <div class="stars">★★★★★</div>
-                                </div>
-                            </header>
-                            <p class="testimonial-text">"Була проблема з соціалізацією і агресією, але після занять з досвідченими фахівцями проблеми вирішились!"</p>
-                        </article>
-
-                        <article class="testimonial-card">
-                            <header class="testimonial-header">
-                                <div class="testimonial-avatar">
-                                    <img src="img/user7.jpg" alt="Валентина Луцюк">
-                                </div>
-                                <div class="testimonial-info">
-                                    <h4>Валентина Луцюк</h4>
-                                    <div class="stars">★★★★★</div>
-                                </div>
-                            </header>
-                            <p class="testimonial-text">"Професіонали, які дійсно люблять тварин і вміють працювати як з собаками, так і з господарями. Цілком рекомендую!"</p>
-                        </article>
-
-                    </div>
-                    <p class="pause-indicator">⏸ Натисніть на відгук, щоб зупинити прокрутку</p>
-                </div>
-            </section>
-
-            <section class="section" id="gallery" aria-labelledby="gallery-title">
-                <div class="section-bg" style="background-image: url('img/bg-gallery.jpg');"></div>
-                <h2 class="section-title" id="gallery-title">Наші учні та атмосфера</h2>
-
-                <div class="gallery-container">
-                    <div class="gallery" id="galleryGrid" role="list">
-                        <!-- Images will be loaded by JavaScript -->
-                    </div>
-                    <div class="gallery-nav">
-                        <button class="gallery-btn" id="prevBtn" aria-label="Попередні фото">‹</button>
-                        <button class="gallery-btn" id="nextBtn" aria-label="Наступні фото">›</button>
-                    </div>
-                </div>
-
-                <!-- Lightbox -->
-                <div id="lightbox" class="lightbox" aria-hidden="true">
-                    <button class="lightbox-close" aria-label="Закрити">&times;</button>
-                    <button class="lightbox-prev" aria-label="Назад">&#10094;</button>
-                    <div class="lightbox-content">
-                        <img id="lightboxImg" src="" alt="Збільшене фото">
-                    </div>
-                    <button class="lightbox-next" aria-label="Вперед">&#10095;</button>
-                     <div class="lightbox-counter" id="lightboxCounter">1 / 27</div>
-                </div>
-
-    <div id="menuOverlay" class="menu-overlay"></div>
-    <aside class="info-section" aria-labelledby="why-choose-title">
-                    <h3 id="why-choose-title" style="font-size: 22px; margin-bottom: 20px; color: var(--text-primary);">Чому обирають SIRKO CLUB?</h3>
-                    <div class="info-grid">
-                        <div class="info-item">
-                            <div class="info-icon" role="img" aria-label="Сертифіковані тренери">
-                                <svg width="24" height="24" viewBox="0 0 24 24" fill="white">
-                                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
-                                </svg>
-                            </div>
-                            <div class="info-content">
-                                <h4>Сертифіковані тренери</h4>
-                                <p>Професійні кінологи з міжнародними сертифікатами</p>
-                            </div>
-                        </div>
-                        <div class="info-item">
-                            <div class="info-icon" role="img" aria-label="Індивідуальний підхід">
-                                <svg width="24" height="24" viewBox="0 0 24 24" fill="white">
-                                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/>
-                                </svg>
-                            </div>
-                            <div class="info-content">
-                                <h4>Індивідуальний підхід</h4>
-                                <p>Персональні програми тренувань для кожного собаки</p>
-                            </div>
-                        </div>
-                        <div class="info-item">
-                            <div class="info-icon" role="img" aria-label="Сучасне обладнання">
-                                <svg width="24" height="24" viewBox="0 0 24 24" fill="white">
-                                    <path d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5c-1.66 0-3 1.34-3 3s1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5C6.34 5 5 6.34 5 8s1.34 3 3 3z"/>
-                                </svg>
-                            </div>
-                            <div class="info-content">
-                                <h4>Сучасне обладнання</h4>
-                                <p>Просторі тренувальні зони з новим обладнанням</p>
-                            </div>
-                        </div>
-                        <div class="info-item">
-                            <div class="info-icon" role="img" aria-label="Досвід роботи">
-                                <svg width="24" height="24" viewBox="0 0 24 24" fill="white">
-                                    <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
-                                </svg>
-                            </div>
-                            <div class="info-content">
-                                <h4>5+ років досвіду</h4>
-                                <p>Перевірений досвід з тисячами щасливих клієнтів</p>
-                            </div>
-                        </div>
-                    </div>
-                </aside>
-                <aside class="map-section" aria-labelledby="location-title">
-    <h3 id="location-title" style="font-size: 22px; margin-bottom: 20px; color: var(--text-primary); font-weight: 700;">
-        📍 SIRKO CLUB на карті
-    </h3>
-    
-    <div class="map-container" style="
-        position: relative; 
-        border-radius: 16px; 
-        overflow: hidden; 
-        box-shadow: 0 10px 40px rgba(0,0,0,0.15); 
-        padding-top: 15px; /* Додатковий простір для стилізації */
-        background-color: #f7f7f7; /* Легкий фон */
-    ">
-        
-        <div style="padding: 0 20px 20px 20px;">
-            <h4 style="margin: 0 0 5px 0; color: var(--text-primary); font-size: 18px; font-weight: 600;">SIRKO CLUB</h4>
-            <p style="margin: 0; color: var(--text-secondary); font-size: 15px; line-height: 1.4;">
-                <strong>Центр розвитку собак</strong><br>
-                вул. Рівненська, 54, Луцьк
-            </p>
-        </div>
-        
-        <iframe src="https://maps.google.com/maps?q=SIRKO%20club,%20Рівненська%20вулиця,%2054,%20Луцьк&t=&z=16&ie=UTF8&iwloc=&output=embed"
-            width="100%"
-            height="450"
-            frameborder="0"
-            style="border:0; display: block;"
-            allowfullscreen=""
-            loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade">
-        </iframe>
-        </div>
-    
-
-    </div>
-</aside>
-
-            <section class="cta-section" id="contact" aria-labelledby="cta-title">
-                <h2 id="cta-title">Готові почати тренування?</h2>
-                <p>Забронюйте вашу першу сесію сьогодні і відчуйте різницю професійного тренування!</p>
-                <div class="cta-buttons">
-                    <button class="btn-large" onclick="window.location.href='https://docs.google.com/forms/d/e/1FAIpQLSfRU9V35muURrDXWjqPRwVCENJERjDULEuLizLu45C7HAdxSQ/viewform?fbclid=PAb21jcAOqe4FleHRuA2FlbQIxMAABp8so7qksCzfOSrL8VyOXS5VUwX1YCI_3GYdRDc7tDFsGlZNAMqE57ftpNtv6_aem_Ss2lgoeEsTIW6_X6SGaq_Q&utm_source=ig&utm_medium=social&utm_content=link_in_bio'">Записатися зараз</button>
-                    <button class="btn-large btn-outline" onclick="window.location.href='https://t.me/Pracontanaa'">Зв'язатися з нами</button>
-                </div>
-            </section>
-        </main>
-
-        <footer role="contentinfo">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <h4>SIRKO CLUB</h4>
-                    <p style="color: var(--text-secondary); font-size: 14px; line-height: 1.6;">Професійний кінологічний центр, що надає комплексні послуги з тренування та догляду за вашими улюбленцями.</p>
-                </div>
-                <nav class="footer-section" aria-label="Швидкі посилання">
-                    <h4>Швидкі посилання</h4>
-                    <ul class="footer-links">
-                        <li><a href="#home">Головна</a></li>
-                        <li><a href="#services">Послуги</a></li>
-                        <li><a href="#testimonials">Відгуки</a></li>
-                        <li><a href="#gallery">Галерея</a></li>
-                    </ul>
-                </nav>
-                <address class="footer-section">
-                    <h4>Контакти</h4>
-                    <ul class="footer-links">
-                        <li><a href="tel:+380668548008">+380 66 854 80 08</a></li>
-                        <li><a href="mailto:info@sirko.club">info@sirko.club</a></li>
-                        <li>Луцьк, Волинь, Україна</li>
-                    </ul>
-                </address>
+        <!-- ── Hero ── -->
+        <section class="hero" id="home" aria-labelledby="hero-title">
+            <video class="hero-video" autoplay muted loop playsinline>
+                <source src="img/video/bg.hero.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <div class="hero-content">
+                <h1 id="hero-title">SIRKO CLUB – Професійний кінологічний центр</h1>
+                <p>Тренування · Соціалізація · Догляд</p>
+                <button class="btn-primary"
+                        onclick="document.getElementById('services').scrollIntoView({behavior:'smooth'})">
+                    Наші послуги
+                </button>
             </div>
-            <div class="footer-bottom">
-                © 2025 SIRKO CLUB. Всі права захищені.
+        </section>
+
+        <!-- ── Services ── -->
+        <section class="section" id="services" aria-labelledby="services-title">
+            <div class="section-bg" style="background-image: url('img/bg-section.jpg');"></div>
+            <h2 class="section-title" id="services-title">Наші послуги</h2>
+            <div class="services-grid">
+
+                <article class="service-card">
+                    <div class="service-icon">
+                        <img src="img/services1.jpg" alt="Basic Obedience" loading="lazy">
+                    </div>
+                    <div class="service-content">
+                        <h3 class="service-title">Курси базового послуху</h3>
+                        <p class="service-desc">Індивідуальні заняття</p>
+                        <span class="price-badge">Від 1500₴</span>
+                    </div>
+                </article>
+
+                <article class="service-card">
+                    <div class="service-icon">
+                        <img src="img/services7.jpg" alt="Group Classes" loading="lazy">
+                    </div>
+                    <div class="service-content">
+                        <h3 class="service-title">Персональні заняття</h3>
+                        <p class="service-desc">Робота під ваш графік</p>
+                        <span class="price-badge">500₴/год</span>
+                    </div>
+                </article>
+
+                <article class="service-card">
+                    <div class="service-icon">
+                        <img src="img/services4.jpg" alt="Puppy Socialization" loading="lazy">
+                    </div>
+                    <div class="service-content">
+                        <h3 class="service-title">Соціалізація</h3>
+                        <p class="service-desc">Знайомство з людьми та собаками</p>
+                        <span class="price-badge">600₴/1.5 год</span>
+                    </div>
+                </article>
+
+                <article class="service-card">
+                    <div class="service-icon">
+                        <img src="img/services2.jpg" alt="Rehabilitation" loading="lazy">
+                    </div>
+                    <div class="service-content">
+                        <h3 class="service-title">Групове заняття</h3>
+                        <p class="service-desc">Корекція поведінки</p>
+                        <span class="price-badge">400₴/2 год</span>
+                    </div>
+                </article>
+
+                <article class="service-card">
+                    <div class="service-icon">
+                        <img src="img/services6.jpg" alt="Sport Training" loading="lazy">
+                    </div>
+                    <div class="service-content">
+                        <h3 class="service-title">Супровід до грумера</h3>
+                        <p class="service-desc">Зниження стресу</p>
+                        <span class="price-badge">Від 1400₴</span>
+                    </div>
+                </article>
+
+                <article class="service-card">
+                    <div class="service-icon">
+                        <img src="img/services5.jpg" alt="Vet Escort" loading="lazy">
+                    </div>
+                    <div class="service-content">
+                        <h3 class="service-title">Ветеринарний супровід</h3>
+                        <p class="service-desc">Професійний догляд</p>
+                        <span class="price-badge">Від 900₴</span>
+                    </div>
+                </article>
+
+                <article class="service-card">
+                    <div class="service-icon">
+                        <img src="img/services3.jpg" alt="Adaptation" loading="lazy">
+                    </div>
+                    <div class="service-content">
+                        <h3 class="service-title">Адаптація</h3>
+                        <p class="service-desc">Допомога з адаптацією</p>
+                        <span class="price-badge">Від 900₴</span>
+                    </div>
+                </article>
+
             </div>
-        </footer>
+        </section>
+
+        <!-- ── Testimonials ── -->
+        <section class="section" style="background: var(--bg-card);" id="testimonials" aria-labelledby="testimonials-title">
+            <div class="social-header">
+                <h2 class="section-title" id="testimonials-title">Історії успіху</h2>
+                <div class="social-links" role="list">
+                    <a href="https://www.instagram.com/lutsk.kinolog?igsh=MXkxdHd0a3gzbTkwdg=="
+                       target="_blank" rel="noopener noreferrer"
+                       class="social-icon" aria-label="Instagram">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                        </svg>
+                    </a>
+                    <a href="https://t.me/Pracontanaa"
+                       target="_blank" rel="noopener noreferrer"
+                       class="social-icon" aria-label="Telegram">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+
+            <div class="testimonials-container">
+                <div class="testimonials-track" id="testimonialsTrack">
+
+                    <article class="testimonial-card">
+                        <header class="testimonial-header">
+                            <div class="testimonial-avatar">
+                                <img src="img/user6.jpg" alt="Фото Олександра Петренка">
+                            </div>
+                            <div class="testimonial-info">
+                                <h4>Олександр Петренко</h4>
+                                <div class="stars">★★★★☆</div>
+                            </div>
+                        </header>
+                        <p class="testimonial-text">"Неймовірний досвід! Наше цуценя так багато навчилось всього за кілька тижнів. Тренери професійні і дійсно піклуються про собак."</p>
+                    </article>
+
+                    <article class="testimonial-card">
+                        <header class="testimonial-header">
+                            <div class="testimonial-avatar">
+                                <img src="img/user5.jpg" alt="Оксана Жешко">
+                            </div>
+                            <div class="testimonial-info">
+                                <h4>Оксана Жешко</h4>
+                                <div class="stars">★★★★★</div>
+                            </div>
+                        </header>
+                        <p class="testimonial-text">"Найкраще рішення, яке ми прийняли! Наш песик тепер слухняний і соціалізований. Рекомендую SIRKO CLUB всім власникам собак!"</p>
+                    </article>
+
+                    <article class="testimonial-card">
+                        <header class="testimonial-header">
+                            <div class="testimonial-avatar">
+                                <img src="img/user3.jpg" alt="Ткачук Дмитро">
+                            </div>
+                            <div class="testimonial-info">
+                                <h4>Ткачук Дмитро</h4>
+                                <div class="stars">★★★★★</div>
+                            </div>
+                        </header>
+                        <p class="testimonial-text">"Дуже вдячні фахівцям центру за професійний підхід! Після курсу корекції поведінки прогулянки стали задоволенням, а не стресом."</p>
+                    </article>
+
+                    <article class="testimonial-card">
+                        <header class="testimonial-header">
+                            <div class="testimonial-avatar">
+                                <img src="img/user2.jpg" alt="Захарчук Софія">
+                            </div>
+                            <div class="testimonial-info">
+                                <h4>Захарчук Софія</h4>
+                                <div class="stars">★★★★☆</div>
+                            </div>
+                        </header>
+                        <p class="testimonial-text">"У цьому центрі навчили не тільки пса, але й нас, господарів, правильно з ним взаємодіяти."</p>
+                    </article>
+
+                    <article class="testimonial-card">
+                        <header class="testimonial-header">
+                            <div class="testimonial-avatar">
+                                <img src="img/user1.jpg" alt="Гавула Анна">
+                            </div>
+                            <div class="testimonial-info">
+                                <h4>Гавула Анна</h4>
+                                <div class="stars">★★★★☆</div>
+                            </div>
+                        </header>
+                        <p class="testimonial-text">"Кінологи завжди на зв'язку, детально пояснюють кожен момент. Рекомендую всім хто любить свого песика!"</p>
+                    </article>
+
+                    <article class="testimonial-card">
+                        <header class="testimonial-header">
+                            <div class="testimonial-avatar">
+                                <img src="img/user4.jpg" alt="Ольга">
+                            </div>
+                            <div class="testimonial-info">
+                                <h4>Ольга</h4>
+                                <div class="stars">★★★★★</div>
+                            </div>
+                        </header>
+                        <p class="testimonial-text">"Була проблема з соціалізацією і агресією, але після занять з досвідченими фахівцями проблеми вирішились!"</p>
+                    </article>
+
+                    <article class="testimonial-card">
+                        <header class="testimonial-header">
+                            <div class="testimonial-avatar">
+                                <img src="img/user7.jpg" alt="Валентина Луцюк">
+                            </div>
+                            <div class="testimonial-info">
+                                <h4>Валентина Луцюк</h4>
+                                <div class="stars">★★★★★</div>
+                            </div>
+                        </header>
+                        <p class="testimonial-text">"Професіонали, які дійсно люблять тварин і вміють працювати як з собаками, так і з господарями. Цілком рекомендую!"</p>
+                    </article>
+
+                </div>
+                <p class="pause-indicator">⏸ Натисніть на відгук, щоб зупинити прокрутку</p>
+            </div>
+        </section>
+
+        <!-- ── Gallery ── -->
+        <section class="section" id="gallery" aria-labelledby="gallery-title">
+            <div class="section-bg" style="background-image: url('img/bg-gallery.jpg');"></div>
+            <h2 class="section-title" id="gallery-title">Наші учні та атмосфера</h2>
+
+            <div class="gallery-container">
+                <div class="gallery" id="galleryGrid" role="list">
+                    <!-- Images loaded by JavaScript -->
+                </div>
+                <div class="gallery-nav">
+                    <button class="gallery-btn" id="prevBtn" aria-label="Попередні фото">‹</button>
+                    <button class="gallery-btn" id="nextBtn" aria-label="Наступні фото">›</button>
+                </div>
+            </div>
+
+            <!-- FIX: lightbox moved outside section — see before </main> -->
+
+            <!-- ── Why choose us ── -->
+            <aside class="info-section" aria-labelledby="why-choose-title">
+                <h3 id="why-choose-title" style="font-size: 22px; margin-bottom: 20px; color: var(--text-primary);">Чому обирають SIRKO CLUB?</h3>
+                <div class="info-grid">
+
+                    <div class="info-item">
+                        <div class="info-icon" role="img" aria-label="Сертифіковані тренери">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="white">
+                                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                            </svg>
+                        </div>
+                        <div class="info-content">
+                            <h4>Сертифіковані тренери</h4>
+                            <p>Професійні кінологи з міжнародними сертифікатами</p>
+                        </div>
+                    </div>
+
+                    <div class="info-item">
+                        <div class="info-icon" role="img" aria-label="Індивідуальний підхід">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="white">
+                                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/>
+                            </svg>
+                        </div>
+                        <div class="info-content">
+                            <h4>Індивідуальний підхід</h4>
+                            <p>Персональні програми тренувань для кожного собаки</p>
+                        </div>
+                    </div>
+
+                    <div class="info-item">
+                        <div class="info-icon" role="img" aria-label="Сучасне обладнання">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="white">
+                                <path d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5c-1.66 0-3 1.34-3 3s1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5C6.34 5 5 6.34 5 8s1.34 3 3 3z"/>
+                            </svg>
+                        </div>
+                        <div class="info-content">
+                            <h4>Сучасне обладнання</h4>
+                            <p>Просторі тренувальні зони з новим обладнанням</p>
+                        </div>
+                    </div>
+
+                    <div class="info-item">
+                        <div class="info-icon" role="img" aria-label="Досвід роботи">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="white">
+                                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                            </svg>
+                        </div>
+                        <div class="info-content">
+                            <h4>5+ років досвіду</h4>
+                            <p>Перевірений досвід з тисячами щасливих клієнтів</p>
+                        </div>
+                    </div>
+
+                </div>
+            </aside>
+            <!-- FIX: aside.info-section properly closed above -->
+
+            <!-- ── Map ── -->
+            <aside class="map-section" aria-labelledby="location-title">
+                <h3 id="location-title" style="font-size: 22px; margin-bottom: 20px; color: var(--text-primary); font-weight: 700;">
+                    📍 SIRKO CLUB на карті
+                </h3>
+                <div class="map-container">
+                    <div class="map-info">
+                        <h4>SIRKO CLUB</h4>
+                        <p><strong>Центр розвитку собак</strong><br>вул. Рівненська, 54, Луцьк</p>
+                    </div>
+
+                    <iframe
+                            src="https://maps.google.com/maps?q=SIRKO%20club,%20Рівненська%20вулиця,%2054,%20Луцьк&t=&z=16&ie=UTF8&iwloc=&output=embed"
+                            width="100%"
+                            height="450"
+                            style="border: 0; display: block;"
+                            allowfullscreen=""
+                            loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"
+                            title="SIRKO CLUB на карті">
+                    </iframe>
+                </div>
+                <!-- FIX: removed extra </div> that was here -->
+            </aside>
+
+        </section>
+
+        <!-- ── CTA ── -->
+        <section class="cta-section" id="contact" aria-labelledby="cta-title">
+            <h2 id="cta-title">Готові почати тренування?</h2>
+            <p>Забронюйте вашу першу сесію сьогодні і відчуйте різницю професійного тренування!</p>
+            <div class="cta-buttons">
+                <button class="btn-large"
+                        onclick="window.location.href='https://docs.google.com/forms/d/e/1FAIpQLSfRU9V35muURrDXWjqPRwVCENJERjDULEuLizLu45C7HAdxSQ/viewform'">
+                    Записатися зараз
+                </button>
+                <button class="btn-large btn-outline"
+                        onclick="window.location.href='https://t.me/Pracontanaa'">
+                    Зв'язатися з нами
+                </button>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Lightbox — must be outside any animated/transformed ancestor -->
+    <div id="lightbox" class="lightbox" aria-hidden="true">
+        <button class="lightbox-close" aria-label="Закрити">&times;</button>
+        <button class="lightbox-prev" aria-label="Назад">&#10094;</button>
+        <div class="lightbox-content">
+            <img id="lightboxImg" src="" alt="Збільшене фото">
+        </div>
+        <button class="lightbox-next" aria-label="Вперед">&#10095;</button>
+        <div class="lightbox-counter" id="lightboxCounter">1 / 27</div>
     </div>
 
-    <button class="scroll-top" id="scrollTop" aria-label="Прокрутити вгору">↑</button>
-    
-    </body>
-    </html>
+    <footer role="contentinfo">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>SIRKO CLUB</h4>
+                <p style="color: var(--text-secondary); font-size: 14px; line-height: 1.6;">Професійний кінологічний центр, що надає комплексні послуги з тренування та догляду за вашими улюбленцями.</p>
+            </div>
+            <nav class="footer-section" aria-label="Швидкі посилання">
+                <h4>Швидкі посилання</h4>
+                <ul class="footer-links">
+                    <li><a href="#home">Головна</a></li>
+                    <li><a href="#services">Послуги</a></li>
+                    <li><a href="#testimonials">Відгуки</a></li>
+                    <li><a href="#gallery">Галерея</a></li>
+                </ul>
+            </nav>
+            <address class="footer-section">
+                <h4>Контакти</h4>
+                <ul class="footer-links">
+                    <li><a href="tel:+380668548008">+380 66 854 80 08</a></li>
+                    <li><a href="mailto:info@sirko.club">info@sirko.club</a></li>
+                    <li>Луцьк, Волинь, Україна</li>
+                </ul>
+            </address>
+        </div>
+        <div class="footer-bottom">
+            © 2025 SIRKO CLUB. Всі права захищені.
+        </div>
+    </footer>
+
+</div>
+</body>
+</html>
